@@ -201,7 +201,7 @@ export default function Home() {
           </p>
           <button>تمتع بمراجعة فعالة مع عرض Pack Révision</button>
         </div>
-        <div className="position-relative">
+        <div className={styles.cercleParent}>
           <Image
             src="/discount.svg"
             alt="layout Logo"

@@ -171,12 +171,7 @@
   line-height: 31px;
   letter-spacing: 0em;
 }
-.circleDiscount {
-  position: absolute;
-  right: -50%;
-  top: 50%;
-  transform: translate(-135%, -50%);
-}
+
 .subHeadTitle {
   margin-top: 60px;
   text-align: center;
@@ -268,6 +263,17 @@
   margin-bottom: 10px;
 }
 
+.cercleParent {
+  position: relative;
+}
+
+.circleDiscount {
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  transform: translate(-135%, -50%);
+}
+
 .fotter {
   display: flex;
   margin: 70px 105px;
@@ -278,7 +284,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
 }
 .social span {
   font-size: 28px;
@@ -337,12 +342,18 @@
     flex-direction: column;
     align-items: center;
     padding-top: 127px;
+    position: relative;
+  }
+
+  .cercleParent {
+    position: static;
   }
 
   .circleDiscount {
     position: absolute;
-    right: -2%;
-    top: -212%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    top: 0%;
   }
 }
 
@@ -392,6 +403,9 @@
   .discountTitle div {
     text-align: center;
   }
+  .social {
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 769px) and (min-width: 10px) {
   .leftSideContainer {
@@ -423,5 +437,14 @@
   }
   .discountTitle button {
     font-size: 16px;
+  }
+  .cercleParent img:first-of-type {
+    width: 332px;
+  }
+}
+
+@media screen and (max-width: 529px) and (min-width: 10px) {
+  .cercleParent img:first-of-type {
+    width: 202px;
   }
 }
