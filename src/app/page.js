@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 export default function Home() {
   return (
     <div className={styles.body} dir="rtl">
@@ -201,7 +201,7 @@ export default function Home() {
           </p>
           <button>تمتع بمراجعة فعالة مع عرض Pack Révision</button>
         </div>
-        <div className={`${styles.cercleParent} `}>
+        <div className={`${styles.cercleParent} w-100`}>
           <div className={`${styles.fixImg} `}>
             {" "}
             <Image
