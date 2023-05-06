@@ -201,13 +201,17 @@ export default function Home() {
           </p>
           <button>تمتع بمراجعة فعالة مع عرض Pack Révision</button>
         </div>
-        <div className={styles.cercleParent}>
-          <Image
-            src="/discount.svg"
-            alt="layout Logo"
-            width={442}
-            height={325}
-          />
+        <div className={`${styles.cercleParent} `}>
+          <div className={`${styles.fixImg} `}>
+            {" "}
+            <Image
+              src="/discount.svg"
+              alt="layout Logo"
+              width={442}
+              height={325}
+            />
+          </div>
+
           <Image
             className={`${styles.circleDiscount}`}
             src="/circle.svg"
